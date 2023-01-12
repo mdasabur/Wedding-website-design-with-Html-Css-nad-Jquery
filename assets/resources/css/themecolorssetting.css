@@ -1,0 +1,64 @@
+.colors-setting{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+    z-index: 15000;
+    background-color: #ffffff;
+    border-radius: 0 0 0 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+.colors-setting.open{
+    transform: translateX(0%);
+}
+.colors-setting .s-toggle-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -40px;
+    color: #ffffff;
+    top: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+.colors-setting h4{
+    font-size: 16px;
+    border-bottom: 1px solid #cccccc;
+    color: #555555;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.colors-setting span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.colors-setting label{
+    font-size: 16px;
+    color: #555555;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+body.dark .colors-setting{
+    background-color: #222222;
+}
+
+body.dark .colors-setting h4{
+    border-color: #353535;
+color: #ffffff;
+}
+body.dark .colors-setting label{
+ color: #bbbbbb;
+}
